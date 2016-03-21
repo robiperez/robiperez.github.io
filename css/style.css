@@ -4,7 +4,11 @@
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-color: white;
-  background-color: #171717;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .body {
@@ -17,10 +21,12 @@
   color: white;
   text-align: center;
   vertical-align: top;
+  margin-top: 0px;
 }
 
 .navigation ul {
   list-style: none;
+  margin-left: -25px;
 }
 
 .navigation ul li {
@@ -39,26 +45,33 @@
 }
 
 .head{
-  margin-top: 20px;
-  margin-left: 40px;
+  padding-top: 50vh;
+  padding-left: 40px;
+  text-align: left;
 
 }
 
 .head a{
   color: white;
   text-decoration: none;
-  
+position: fixed;
+
 }
 
 .subhead{
-  margin-left: 40px;
+  padding-left: 40px;
+  margin-top: 35px;
+  text-align: left;
+  color: white;
+  position: fixed;
 }
 
 .land {
-  text-align: center;
-  color: white;
-  height: 50vh !important;
-  background-color: #171717
+  margin-top: -10vh;
+  background-color: #171717;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   color: white;
   display: flex;
  -webkit-justify-content: center;
@@ -68,19 +81,53 @@
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
-
+          text-align: center;
 }
 
-.present{
+.land h1 p {
+  text-align: center;
+  position: fixed;
+}
+
+.text {
   width: 100%;
   text-align: center;
   color: white;
 }
 
 .present ul{
+  width: 100%;
+  text-align: center;
+  color: white;
   list-style: none;
+  margin-left: -35px;
 
 }
 .present ul li{
-  display: line-block;
+  display: inline-block;
+  margin: 15px 0 25px 25px;
+  text-transform: uppercase;
+}
+
+.works {
+  color: white;
+  width: 550px;
+  height: 150px;
+  border-radius: 30px;
+  background-color: pink;
+display: flex;
+ -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+          text-align: center;
+          display: none;
+}
+
+.well:hover, .works {
+  visibility: visible;
+  color: red;
 }
