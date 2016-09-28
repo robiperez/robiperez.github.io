@@ -1,81 +1,17 @@
-* {
+body, html{
+  height: 100%;
+  background-color: #131313;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-color: white;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.body {
-  background-color: #171717;
-  -webkit-animation-duration:1s;
-}
-
-.navigation {
-  position: fixed;
-  width: 100%;
-  color: white;
-  text-align: center;
-  vertical-align: top;
-  margin-top: 0px;
-}
-
-.navigation ul {
-  list-style: none;
-  margin-left: -25px;
-}
-
-.navigation ul li {
-  display: inline-block;
-  margin: 15px 0 25px 25px;
-}
-
-.navigation ul li a{
-  color: white;
-  text-decoration: none;
-  padding-bottom: 3px;
-}
-
-.navigation ul li a :hover{
-  border-bottom: 2.5px solid white;
-}
-
-.head{
-  padding-top: 50vh;
-  padding-left: 40px;
-  text-align: left;
--webkit-animation-delay:2s;
+  font: 400 15px/1.8 'Lato', sans-serif;
 
 }
-
-
-.head a{
-  color: white;
-  text-decoration: none;
-position: fixed;
-
-}
-
-.head a:hover{
-  animation-name: bounce;
-
-}
-.subhead{
-  padding-left: 40px;
-  margin-top: 35px;
-  text-align: left;
-  color: white;
-  position: fixed;
+.part1{
+  height: 56.25%;
 }
 
 .land {
-  margin-top: -10vh;
-  background-color: #171717;
+  background-color: #131313;
   -webkit-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
@@ -91,57 +27,42 @@ position: fixed;
           text-align: center;
 }
 
-.land h1 p {
+.caption { 
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
   text-align: center;
-  position: fixed;
+  color: #fff;
+  letter-spacing: 10px;
+}
+.caption p {
+  font-size: 12px;
 }
 
 .text {
   width: 100%;
   text-align: center;
   color: white;
-
-}
-
-.present ul{
-  width: 100%;
-  text-align: center;
-  color: white;
-  list-style: none;
-  margin-left: -35px;
-
-}
-.present ul li{
-  display: inline-block;
-  margin: 15px 0 25px 25px;
-  text-transform: uppercase;
-}
-
-.works {
-  color: white;
-  width: 550px;
-  height: 150px;
-  border-radius: 30px;
-  background-color: pink;
-display: flex;
- -webkit-justify-content: center;
-          justify-content: center;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-flex-flow: column;
-      -ms-flex-flow: column;
-          flex-flow: column;
-          text-align: center;
-          display: none;
-}
-
-.present ul li :hover {
-  visibility: visible;
-  color: red;
 }
 
 
-
+.paralax1,.paralax2{
+    padding-top: 56.25%;
+    opacity: 10%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.paralax1{
+  background-image: url('assets/IMG_5403.JPG');
+  min-height: 100%;
+}
+.parlax2{
+  background-image: url('assets/IMG_5724.JPG');
+  min-height: 400px;
+}
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -150,73 +71,8 @@ display: flex;
   animation-fill-mode: both;
 }
 
-.animated.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-.bounce {
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-transform-origin: center bottom;
-  transform-origin: center bottom;
-}
-
-
-@-webkit-keyframes bounce {
-  from, 20%, 53%, 80%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-
-  40%, 43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
-  }
-
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0,-4px,0);
-    transform: translate3d(0,-4px,0);
-  }
-}
-
-@keyframes bounce {
-  from, 20%, 53%, 80%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-
-  40%, 43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
-  }
-
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0,-4px,0);
-    transform: translate3d(0,-4px,0);
-  }
+.fadeInUpBig {
+  animation-name: fadeInUpBig;
 }
 
 @keyframes fadeInUpBig {
@@ -231,6 +87,72 @@ display: flex;
   }
 }
 
-.fadeInUpBig {
-  animation-name: fadeInUpBig;
+.container {
+    display: inline-block;
+    position: fixed;
+    align:left;
+    padding-top: 10px;
+    padding-left: 10px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2{
+    opacity: 0;
+}
+
+
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-col
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }

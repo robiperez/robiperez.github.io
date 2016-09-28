@@ -1,36 +1,50 @@
-class=""<! doctype html>
+<! doctype html>
 	<html>
 	<head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+        <link rel="javascript" type="javascript" href="js/script.js">
         <title>Luis Pérez</title>
     </head>
-    <body class="body animated fadeinupbig">
-    	</div>
-    	<div>
-    		<h1 class="head animated bounce" align="left"><a href="http://robiperez.github.io">Luis Pérez</a></h1>
-    		<p class="subhead"align="left">Web developer/designer</p>
-    		<h1 class="land">Sup.</h1>
+    <body>
+    <div class="container", onmouseenter="myFunction(this)", onmouseenter="openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <script type="text/javascript">
+                function myFunction(x) {
+        x.classList.toggle("change");
+    }
+        function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+            </script>        
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onmouseenter="closeNav()">&times;</a>
+                <a href="#">Works</a>
+                <a href="#">Drafts</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+        </div>
+        <div class= "Paralax1">
+            <div class="caption animated fadeinupbig">
+                <span class="border"><h1>LUIS PÉREZ</h1></span>
+                <p class="subhead">WEB DEVELOPER/DESIGNER</p>
+            </div>
+        </div>
+        <div class="land">
+            <div>
+    		<h2 class="land">Sup.</h2>
     			<p class="text"> Hey!<br> My name is Luis and I am kindda learning to code.<br>I am a graphic designer still in highschool.<br>It's about having fun.</p>
-    	</div>	
-    	<div class="present">
-    		<ul>
-    			<li><a class="well" href="">Works</a></li>
-    			<li><a class="d" href="">Drats</a></li>
-    			<li><a class="g" href="">gallery</a></li>
-    			<li><a class="b" href="">blog?</a></li>
-    		</ul>
-    	</div>
-    	<div class="works">
-    		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    	</div>
+    	   </div>	
+        </div>
+        <div class="Paralax2">Hello</div>
     </body>
 
 
