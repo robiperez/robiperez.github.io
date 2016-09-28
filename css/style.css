@@ -26,6 +26,8 @@ body, html{
       -ms-flex-flow: column;
           flex-flow: column;
           text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .caption { 
@@ -144,4 +146,15 @@ body, html{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.white{
+  /*background-color: #f1f1f1;*/
+  height: 100%;
+  background-image: url("IMG_5724.jpg");
+  opacity: 10%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
