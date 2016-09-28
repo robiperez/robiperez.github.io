@@ -9,33 +9,28 @@
         <title>Luis Pérez</title>
     </head>
     <body>
-    <div class="container", onmouseenter="myFunction(this)", onmouseenter="openNav()">
+    <div class="container", onmouseenter="myFunction(this)" onclick="myFunction(this)">
+    <span style="font-size:30px;cursor:pointer" onmouseenter="openNav()">
+
             <div class="bar1"></div>
             <div class="bar2"></div>
-            <div class="bar3"></div>
-            <script type="text/javascript">
-                function myFunction(x) {
-        x.classList.toggle("change");
-    }
-        function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-            </script>        
+            <div class="bar3"></div>    
+
+    </span>   
         </div>
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onmouseenter="closeNav()">&times;</a>
-                <a href="#">Works</a>
-                <a href="#">Drafts</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
-        </div>
+            <span onclick="myFunction(this)">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </span>
+            <a href="#">Works</a>
+            <a href="#">Drafts</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+</div>
         <div class= "Paralax1">
             <div class="caption animated fadeinupbig">
-                <span class="border"><h1>LUIS PÉREZ</h1></span>
-                <p class="subhead">WEB DEVELOPER/DESIGNER</p>
+                <span><h1>LUIS PÉREZ</h1></span>
+                <p class="subhead">WEB DESIGNER/DEVELOPER</p>
             </div>
         </div>
         <div class="land">
@@ -44,12 +39,18 @@ function closeNav() {
     			<p class="text"> Hey!<br> My name is Luis and I am kindda learning to code.<br>I am a graphic designer still in highschool.<br>It's about having fun.</p>
     	   </div>	
         </div>
-        <div class="Paralax2">Hello</div>
+        <div class="paralax2">Hello</div>
     </body>
+    <script type="text/javascript">
+                function myFunction(x) {
+            x.classList.toggle("change");
+            }
+            function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
 
-
-
-
-
-
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+    </script>  
 	</html>

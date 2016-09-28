@@ -4,6 +4,7 @@ body, html{
   margin: 0;
   padding: 0;
   font: 400 15px/1.8 'Lato', sans-serif;
+  text-decoration: none;
 
 }
 .part1{
@@ -48,7 +49,6 @@ body, html{
 
 
 .paralax1,.paralax2{
-    padding-top: 56.25%;
     opacity: 10%;
     background-attachment: fixed;
     background-position: center;
@@ -61,7 +61,7 @@ body, html{
 }
 .parlax2{
   background-image: url('assets/IMG_5724.JPG');
-  min-height: 400px;
+  min-height: 100%;
 }
 
 .animated {
@@ -106,20 +106,6 @@ body, html{
     transition: 0.4s;
 }
 
-.change .bar1{
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-.change .bar2{
-    opacity: 0;
-}
-
-
-.change .bar3{
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-}
 
 .sidenav {
     height: 100%;
@@ -128,11 +114,12 @@ body, html{
     z-index: 1;
     top: 0;
     left: 0;
-    background-col
+    background-color: #111;
     overflow-x: hidden;
-    padding-top: 60px;
     transition: 0.5s;
+    padding-top: 60px;
 }
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -141,6 +128,7 @@ body, html{
     display: block;
     transition: 0.3s
 }
+
 .sidenav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }
@@ -152,7 +140,8 @@ body, html{
     font-size: 36px;
     margin-left: 50px;
 }
+
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
