@@ -29,6 +29,38 @@ body, html{
   padding-bottom: 50px;
   padding-top: 50px;
 }
+.land2{
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  color: white;
+  display: flex;
+ -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+          text-align: center;
+  padding-top: 50px;
+}
+
+h3 {
+  letter-spacing: 5px;
+}
+
+.land a {
+  text-decoration: none;
+  color:#9F9F9F;
+}
+.land a:hover{
+  color: #fff;
+}
+
+.land ul {
+  list-style-type: none;
+}
 
 .caption { 
   position: absolute;
@@ -47,6 +79,33 @@ body, html{
   width: 100%;
   text-align: center;
   color: white;
+}
+
+.profile{
+  position: fixed;
+  margin-left: 5%;
+  margin-top: 10%;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+.profiletxt{
+  position: fixed;
+  color: #fff;
+  text-align: center;
+  margin-top: 40%;
+  margin-left: 13.5%;
+  padding-bottom: 10px;
+
+}
+.profiletxt a {
+  text-decoration: none;
+  color: #9F9F9F;
+}
+
+.profiletxt a:hover{
+  color: #fff;
 }
 
 
@@ -125,10 +184,10 @@ body, html{
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
 .sidenav a:hover, .offcanvas a:focus{
