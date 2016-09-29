@@ -82,7 +82,7 @@ h3 {
 }
 
 .profile{
-  position: fixed;
+  position: absolute;
   margin-left: 5%;
   margin-top: 10%;
   height: 400px;
@@ -91,7 +91,7 @@ h3 {
 }
 
 .profiletxt{
-  position: fixed;
+  position: absolute;
   color: #fff;
   text-align: center;
   margin-top: 40%;
