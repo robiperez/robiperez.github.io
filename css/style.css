@@ -82,7 +82,7 @@ h3 {
 }
 
 .profile{
-  position: absolute;
+  position: fixed;
   margin-left: 5%;
   margin-top: 10%;
   height: 400px;
@@ -91,7 +91,7 @@ h3 {
 }
 
 .profiletxt{
-  position: absolute;
+  position: fixed;
   color: #fff;
   text-align: center;
   margin-top: 40%;
@@ -108,6 +108,23 @@ h3 {
   color: #fff;
 }
 
+@media screen and (max-width: 1000px){
+  .profile{
+    position:relative;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 30px;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+  }
+  .profiletxt{
+  position: relative;
+  margin-top: 5%;
+  margin-left: 0%;
+  }
+}
 
 .paralax1,.paralax2{
     opacity: 10%;
