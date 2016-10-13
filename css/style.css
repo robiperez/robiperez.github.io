@@ -224,13 +224,51 @@ h3 {
   .sidenav a {font-size: 18px;}
 }
 
-.white{
-  /*background-color: #f1f1f1;*/
+.works{
   height: 100%;
-  background-image: url("IMG_5724.jpg");
-  opacity: 10%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  font-weight: 3px;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+.works h4{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.works img{
+  width: 31%;
+  float: left;
+  padding: 1%;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+.works img:hover {
+  -webkit-transform: translate(0px, -10px) scale(1.2);
+          transform: translate(0px, -10px) scale(1.2);
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
 }

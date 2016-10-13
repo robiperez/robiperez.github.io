@@ -34,20 +34,57 @@
         <div class="land">
             <div>
     		<h2>Sup.</h2>
-    			<p class="text"> Hey!<br> My name is Luis and I am kinda learning to code.<br>I am a graphic designer still in highschool.<br>Here are some of my works.</p>
+    			<p class="text"> Hey!<br> My name is Luis and I am kinda learning to code.<br>I am a graphic designer still in highschool.<br>Here are some of the things I've done.</p>
     	   </div>	
         </div>
-        <div class="white">
-            
+        <div class="works">
+            <div>
+                <a href="http://behance.net/gallery/">
+                    <img src="css/assets/projects/Logo.png">
+                    <h4 class="hidden animated fadeIn">Personal Brand</h4>
+                </a>
+            </div>
+            <div>
+                <a href="http://behance.net/gallery/">
+                    <img src="css/assets/projects/VION-04.png">
+                    <h4 class="hidden animated fadeIn">vion</h4>
+                </a>
+            </div>
+            <div>
+                <a href="http://behance.net/gallery/">
+                    <img src="css/assets/projects/re1.png">
+                    <h4 class="hidden animated fadeIn">TEDxGarzaGarcia 2016</h4>
+                </a>
+            </div>
+            <div>
+                <a href="http://behance.net/gallery/">
+                    <img src="css/assets/projects/zincconcept5.png">
+                    <h4 class="hidden animated fadeIn">zinc</h4>
+                </a>
+            </div>
         </div>
+
     </body>
     <script type="text/javascript">
             function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
 
-function closeNav() {
+            function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+            function fade() {
+        $('.works').on('mouseover', function fade() {
+        var h4 = $(this).find('h4');
+            h4.removeClass('hidden');
+            h4.addClass('animated fadeIn');
+        $(this).on('mouseleave', function fade() {
+            h4.addClass('hidden');
+        });
+    });
+}();
+
+
     </script>  
 	</html>
