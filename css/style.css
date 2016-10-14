@@ -53,6 +53,7 @@ h3 {
 .land a {
   text-decoration: none;
   color:#9F9F9F;
+  transition: 0.2s ease-in-out;
 }
 .land a:hover{
   color: #fff;
@@ -102,13 +103,14 @@ h3 {
 .profiletxt a {
   text-decoration: none;
   color: #9F9F9F;
+  transition: 0.2s ease-in-out;
 }
 
 .profiletxt a:hover{
   color: #fff;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1435px){
   .profile{
     position:relative;
     display: block;
@@ -123,6 +125,10 @@ h3 {
   position: relative;
   margin-top: 5%;
   margin-left: 0%;
+  }
+  .container2{
+    margin-top: -30px;
+    position: fixed;
   }
 }
 
@@ -175,6 +181,15 @@ h3 {
     cursor: pointer;
 }
 
+.container2 {
+    display: inline-block;
+    position: fixed;
+    align:left;
+    padding-top: 10px;
+    padding-left: 10px;
+    vertical-align: top;
+    cursor: pointer;
+}
 
 .bar1, .bar2, .bar3 {
     width: 35px;
@@ -231,11 +246,11 @@ h3 {
   text-align: center;
 }
 
-.hidden{
+.works h4{
   display: none;
 }
 
-.works h4{
+.works h4:hover{
   color: white;
   font-size: 15px;
   text-align: center;
@@ -243,16 +258,20 @@ h3 {
 
 }
 
+
 .works img{
-  width: 31%;
+  width: 30%;
+  background-color: black;
   float: left;
-  padding: 1%;
+  margin: 1.66766666666666666666666667%;
+  opacity: 1;
   cursor: pointer;
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
 }
 
 .works img:hover {
+  opacity: .5;
   -webkit-transform: translate(0px, -10px) scale(1.2);
           transform: translate(0px, -10px) scale(1.2);
 }
@@ -261,12 +280,13 @@ h3 {
 @media screen and (max-width: 1000px){
   .works img{
     width: 45%;
+    padding: 2.5%
   }
 }
 @media screen and (max-width: 600px){
   .works img{
     width: 90%;
-    vertical-align: center;
+    padding: 5%;
   }
 }
 .fadeIn {
