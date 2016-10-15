@@ -141,7 +141,7 @@ h3 {
 }
 .paralax1{
   background-image: url('assets/IMG_5403.JPG');
-  min-height: 100vh ;
+  min-height: 100% ;
 }
 .parlax2{
   background-image: url('assets/IMG_5724.JPG');
