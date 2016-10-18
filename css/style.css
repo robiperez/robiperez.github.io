@@ -303,3 +303,17 @@ h3 {
         opacity: 1
     }
 }
+.works2 img{
+  width: 30%;
+  background-color: black;
+  float: left;
+  margin: 1.66766666666666666666666667%;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+.works2 img:hover {
+  -webkit-transform: translate(0px, -10px) scale(1.2);
+          transform: translate(0px, -10px) scale(1.2);
+}
